@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP STM32WB35CEU6A
+D ARM Microcontrollers - MCU 16/32-BITS MICROS
+K
+F https://componentsearchengine.com/Datasheets/2/STM32WB35CEU6A.pdf
+$ENDCMP
+#
+#End Doc Library
