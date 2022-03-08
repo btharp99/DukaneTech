@@ -464,6 +464,24 @@
   )
 
 
+  (wire (pts (xy 95.25 146.05) (xy 95.25 151.13))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 257ba76b-b4ba-415d-9845-f9d633f17fdb)
+  )
+  (wire (pts (xy 97.79 146.05) (xy 97.79 151.13))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 2943f8f6-7441-42eb-918b-ea5d98022792)
+  )
+
+  (hierarchical_label "USB_DP1" (shape input) (at 97.79 151.13 270)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 97be51c8-a242-4a2e-98db-c877e41c0019)
+  )
+  (hierarchical_label "USB_DN1" (shape input) (at 95.25 151.13 270)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a6963c3b-3e86-43c7-a283-004ae7f206c2)
+  )
+
   (symbol (lib_id "MIMXRT1015CAF4A:MIMXRT1015CAF4A") (at 49.53 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a108bf74-3a91-4c0a-8c67-2d89e262b919)
@@ -611,6 +629,22 @@
     (property "Sheet file" "power_subsystem.kicad_sch" (id 1) (at 491.49 130.1246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+    (pin "USB_DP2" output (at 491.49 69.85 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 56f922ba-5e6c-4b39-98b8-ceef758779a3)
+    )
+    (pin "USB_DP1" output (at 491.49 74.93 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 37fed5f7-4342-43d4-8e52-4cb994a65b60)
+    )
+    (pin "USB_DN1" output (at 491.49 80.01 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid cebe7807-269a-438d-9ce8-7474a1e8d4b1)
+    )
+    (pin "USB_DN2" output (at 491.49 85.09 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 4ea989fb-9cda-4210-89d1-fe153727e40c)
+    )
   )
 
   (sheet_instances
@@ -619,6 +653,15 @@
   )
 
   (symbol_instances
+    (path "/6fe27d7a-8728-4218-b48e-6f66377c607f/31cac15e-bcad-4ac1-ba6d-6a7d3365c9db"
+      (reference "#PWR?") (unit 1) (value "VBUS") (footprint "")
+    )
+    (path "/6fe27d7a-8728-4218-b48e-6f66377c607f/5a889284-4c9f-49be-8f02-e43e18550914"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/6fe27d7a-8728-4218-b48e-6f66377c607f/60b6fd94-83fa-4737-bac1-4732bb229ea8"
+      (reference "D?") (unit 1) (value "SML-D12M1WT86") (footprint "LED_SML-D12M1WT86")
+    )
     (path "/a108bf74-3a91-4c0a-8c67-2d89e262b919"
       (reference "IC?") (unit 1) (value "MIMXRT1015CAF4A") (footprint "QFP50P1600X1600X170-100N")
     )
