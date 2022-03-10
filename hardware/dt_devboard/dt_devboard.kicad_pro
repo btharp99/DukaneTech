@@ -323,7 +323,15 @@
     ],
     [
       "6fe27d7a-8728-4218-b48e-6f66377c607f",
-      "Power"
+      "usb_subsystem"
+    ],
+    [
+      "cfcae4a3-5d05-48fe-9a5f-9dcd4da4bd65",
+      "external_memory"
+    ],
+    [
+      "96116b5a-a0de-4cfe-b1e6-46c282049706",
+      "external_clocks"
     ]
   ],
   "text_variables": {}
