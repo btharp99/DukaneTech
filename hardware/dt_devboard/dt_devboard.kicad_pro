@@ -332,6 +332,10 @@
     [
       "96116b5a-a0de-4cfe-b1e6-46c282049706",
       "external_clocks"
+    ],
+    [
+      "793885b0-bfaa-4c5f-82aa-79183476bde6",
+      "peripheral_conn"
     ]
   ],
   "text_variables": {}
