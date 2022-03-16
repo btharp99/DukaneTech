@@ -3817,6 +3817,9 @@
     (path "/1cee2bbc-2aa8-4782-a0bb-080d9e06eb48"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/2bc3dab7-b392-4f4b-986a-4e04dd17dd81"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/54524a5e-e194-432d-9d29-2aa65b2515c3"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -3825,6 +3828,9 @@
     )
     (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/607e16ab-128e-4b86-a730-5342459a2b2b"
       (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/7f32e42a-2623-416f-acda-f0efd901b01f"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/b78957c1-d667-4d5c-85d2-989d524d1809"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
@@ -3906,6 +3912,9 @@
     )
     (path "/4630fa80-4414-4239-8955-85cc0f6db5a0"
       (reference "J?") (unit 1) (value "SD_Card") (footprint "")
+    )
+    (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/57ac986f-5fd8-4d62-b48b-c429dac1b50a"
+      (reference "J?") (unit 1) (value "Conn_01x05_Female") (footprint "")
     )
     (path "/793885b0-bfaa-4c5f-82aa-79183476bde6/c1cbdd6e-51f3-4b37-beed-34ae3ed00775"
       (reference "J?") (unit 1) (value "Conn_01x06_Female") (footprint "")
