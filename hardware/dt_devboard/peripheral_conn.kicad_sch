@@ -1,6 +1,6 @@
 (kicad_sch (version 20211123) (generator eeschema)
 
-  (uuid 56b285dc-87fa-4020-9a37-02994d9ca88f)
+  (uuid 882c0f8b-22bb-47bf-b523-582376966671)
 
   (paper "A4")
 
@@ -404,7 +404,7 @@
     (uuid 35cb68f1-fd20-49e7-8b81-8ffdb417071e)
   )
 
-  (wire (pts (xy 111.76 88.9) (xy 111.76 92.71))
+  (wire (pts (xy 105.41 88.9) (xy 105.41 92.71))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 3e0cd5c9-d0a6-4d04-b66e-2664632a9678)
   )
@@ -446,7 +446,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 870b523a-bc6e-43eb-8102-00381a555db3)
   )
-  (wire (pts (xy 111.76 92.71) (xy 120.65 92.71))
+  (wire (pts (xy 105.41 92.71) (xy 120.65 92.71))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9259ca4e-586e-4154-ae3e-cffbc7ea2cfa)
   )
@@ -526,7 +526,7 @@
     (uuid f45def72-1ceb-482e-89b1-c2e3c4cb6e91)
   )
 
-  (text "Decide which I2C pins go to temp sensor\n" (at 30.48 43.18 0)
+  (text "Decide which I2C pins go to temp sensor\n" (at 25.4 30.48 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 07ca6b56-f568-4e05-b6eb-7d2e19e8bf66)
   )
@@ -550,6 +550,14 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6faa5baf-8fa6-478d-9531-958b9102e55d)
   )
+  (text "SPI1" (at 68.58 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6ff605c0-ff0e-408c-aa65-991dfa0817c9)
+  )
+  (text "UART1" (at 135.89 92.71 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 9cb3ab70-f859-494a-87ac-434fbc66c33e)
+  )
   (text "Camera Module\n" (at 100.33 82.55 0)
     (effects (font (size 2.5 2.5)) (justify left bottom))
     (uuid 9ea6866c-6eb5-4451-b43f-19ae29e92408)
@@ -565,6 +573,35 @@
   (text "Decide which pins are UART, and RST\n" (at 116.84 87.63 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e299eaa8-5d5e-4421-ae22-14fc7446260a)
+  )
+  (text "I2C1" (at 26.67 35.56 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e8a669b7-c663-4fa5-9b1f-ce9eb01dc726)
+  )
+
+  (hierarchical_label "I2C1_SCL" (shape input) (at 54.61 50.8 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2a23bd6f-56fe-4fa4-91c1-1a42c1f1044b)
+  )
+  (hierarchical_label "SPI1_MISO" (shape input) (at 58.42 101.6 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2ead883a-2ef5-4441-a2ba-3751c5a3785b)
+  )
+  (hierarchical_label "I2C1_SDA" (shape input) (at 54.61 53.34 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 30a8d4e5-202c-4d57-80d8-c5f2ad3ce2dd)
+  )
+  (hierarchical_label "UART1_RXD" (shape output) (at 111.76 97.79 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 352e8c6b-c067-4e2a-8604-eb340760d161)
+  )
+  (hierarchical_label "SPI1_SCK" (shape input) (at 58.42 104.14 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b158a7ba-bb21-4131-9851-8f8f201bd693)
+  )
+  (hierarchical_label "UART1_TXD" (shape input) (at 111.76 95.25 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid e4f6779f-248c-43d4-ac69-68bbd89522b7)
   )
 
   (symbol (lib_id "Connector:Conn_01x06_Female") (at 76.2 101.6 0) (unit 1)
@@ -590,17 +627,17 @@
     (pin "6" (uuid 8941e1cd-c166-4020-88f7-a4db28cbb61d))
   )
 
-  (symbol (lib_id "power:+5V") (at 111.76 88.9 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 105.41 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2bc3dab7-b392-4f4b-986a-4e04dd17dd81)
-    (property "Reference" "#PWR?" (id 0) (at 111.76 92.71 0)
+    (property "Reference" "#PWR?" (id 0) (at 105.41 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (id 1) (at 111.76 83.82 0))
-    (property "Footprint" "" (id 2) (at 111.76 88.9 0)
+    (property "Value" "+5V" (id 1) (at 105.41 83.82 0))
+    (property "Footprint" "" (id 2) (at 105.41 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 111.76 88.9 0)
+    (property "Datasheet" "" (id 3) (at 105.41 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2e40f1f3-8601-417b-bc0a-fcaa675f96dd))
@@ -729,5 +766,39 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cd22000c-bb1e-4204-b747-65ef16ed2b36))
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/2bc3dab7-b392-4f4b-986a-4e04dd17dd81"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/5c3fbc86-b745-4733-8ef5-b40aa9974c3c"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/607e16ab-128e-4b86-a730-5342459a2b2b"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/7f32e42a-2623-416f-acda-f0efd901b01f"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b78957c1-d667-4d5c-85d2-989d524d1809"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ef3abe03-d68b-4855-bc8f-417487ded968"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/15613572-e2c0-4cb3-97c2-7f932dbd6ac4"
+      (reference "J?") (unit 1) (value "Conn_01x06_Female") (footprint "")
+    )
+    (path "/57ac986f-5fd8-4d62-b48b-c429dac1b50a"
+      (reference "J?") (unit 1) (value "Conn_01x05_Female") (footprint "")
+    )
+    (path "/c1cbdd6e-51f3-4b37-beed-34ae3ed00775"
+      (reference "J?") (unit 1) (value "Conn_01x06_Female") (footprint "")
+    )
   )
 )
