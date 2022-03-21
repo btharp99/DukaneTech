@@ -224,6 +224,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid adc07a0d-20d0-401e-9139-c0df1171be5e)
   )
+  (text "cap at power rail for decoupling" (at 111.76 52.07 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b8474e4c-5f8e-47d6-9c87-2605d312f08c)
+  )
 
   (hierarchical_label "SO" (shape bidirectional) (at 67.31 69.85 180)
     (effects (font (size 1.27 1.27)) (justify right))
