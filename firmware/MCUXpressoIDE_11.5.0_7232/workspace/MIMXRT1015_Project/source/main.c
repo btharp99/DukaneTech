@@ -29,7 +29,7 @@
  */
 
 /**
- * @file    MIMXRT1015_Project.c
+ * @file    main.c
  * @brief   Application entry point.
  */
 #include <stdio.h>
